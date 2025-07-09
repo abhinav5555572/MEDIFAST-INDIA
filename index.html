@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MediFast - Fast Medicine Delivery</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f5faff;
+      color: #333;
+    }
+    header {
+      background-color: #0aa1dd;
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+    }
+    nav {
+      text-align: center;
+      padding: 15px;
+      background-color: #e0f7ff;
+    }
+    nav a {
+      margin: 0 20px;
+      color: #0aa1dd;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .hero {
+      text-align: center;
+      padding: 50px 25px;
+    }
+    .hero h1 {
+      font-size: 34px;
+      margin-bottom: 15px;
+    }
+    .hero p {
+      font-size: 18px;
+      color: #444;
+    }
+    .cta-button {
+      display: inline-block;
+      padding: 12px 25px;
+      background-color: #0aa1dd;
+      color: white;
+      border-radius: 6px;
+      margin-top: 25px;
+      text-decoration: none;
+      font-size: 16px;
+    }
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 40px 10px;
+    }
+    .feature {
+      background: white;
+      padding: 25px;
+      margin: 15px;
+      border-radius: 12px;
+      width: 280px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    form {
+      background: white;
+      padding: 30px;
+      margin: 30px auto;
+      border-radius: 12px;
+      width: 90%;
+      max-width: 520px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    }
+    form input, form select, form button {
+      width: 100%;
+      padding: 12px;
+      margin: 12px 0;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      font-size: 15px;
+    }
+    form button {
+      background-color: #0aa1dd;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    footer {
+      background: #0aa1dd;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 50px;
+      font-size: 14px;
+    }
+    .whatsapp-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25d366;
+      color: white;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      font-size: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>MediFast</h1>
+    <p>Making medicine delivery smoother & faster — built with college hustle 💊🚀</p>
+  </header>
+
+  <nav>
+    <a href="#upload">Upload Prescription</a>
+    <a href="#reminder">Set Reminder</a>
+    <a href="#join">Join as Chemist</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section class="hero">
+    <h1>Order Medicines in 3 Easy Steps</h1>
+    <p>Upload your prescription, confirm the order, and chill — we’ll deliver within 90 minutes.</p>
+    <a href="#upload" class="cta-button">Order Now</a>
+  </section>
+
+  <section class="features">
+    <div class="feature">
+      <h3>Upload Prescription</h3>
+      <p>Send your doctor’s prescription — super quick and secure.</p>
+    </div>
+    <div class="feature">
+      <h3>Local Chemist Support</h3>
+      <p>Our partners are trusted nearby pharmacies — not some shady source.</p>
+    </div>
+    <div class="feature">
+      <h3>Monthly Reminders</h3>
+      <p>Set it once, and we’ll remind you on WhatsApp. No stress, no forgetfulness.</p>
+    </div>
+  </section>
+
+  <section id="upload">
+    <form>
+      <h2>Upload Your Prescription</h2>
+      <input type="text" placeholder="Full Name" required>
+      <input type="tel" placeholder="Mobile Number" required>
+      <input type="file" accept=".jpg,.jpeg,.png,.pdf" required>
+      <select>
+        <option>Select Preferred Chemist (optional)</option>
+        <option>Local Chemist A</option>
+        <option>Local Chemist B</option>
+      </select>
+      <button type="submit">Submit Order</button>
+    </form>
+  </section>
+
+  <section id="reminder">
+    <form>
+      <h2>Set Medicine Reminder</h2>
+      <input type="text" placeholder="Medicine Name" required>
+      <select>
+        <option>Every 30 Days</option>
+        <option>Every 15 Days</option>
+        <option>Weekly</option>
+      </select>
+      <select>
+        <option>Remind by SMS</option>
+        <option>Remind by WhatsApp</option>
+        <option>Remind by Email</option>
+      </select>
+      <button type="submit">Save Reminder</button>
+    </form>
+  </section>
+
+  <section id="join">
+    <form>
+      <h2>Join as a Chemist</h2>
+      <input type="text" placeholder="Chemist Shop Name" required>
+      <input type="text" placeholder="Shop Address" required>
+      <input type="file" accept=".jpg,.jpeg,.png,.pdf" required>
+      <input type="email" placeholder="Email Address" required>
+      <input type="tel" placeholder="Phone Number" required>
+      <input type="text" placeholder="Areas You Deliver In" required>
+      <button type="submit">Register</button>
+    </form>
+  </section>
+
+  <footer id="contact">
+    <p>Contact: <strong>medifast@gmail.com</strong> | 📞 1800-123-4567</p>
+    <p>Built with 💙 by college learners | &copy; 2025 MediFast</p>
+  </footer>
+
+  <a href="https://wa.me/919999999999" class="whatsapp-button" target="_blank">💬</a>
+</body>
+</html>
